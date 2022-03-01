@@ -11,8 +11,8 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+{
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -20,11 +20,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         BottomNavigationView nav = findViewById(R.id.nav);
         nav.setOnItemSelectedListener(new
-        NavigationBarView.OnItemSelectedListener() {
-                                                      @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        NavigationBarView.OnItemSelectedListener()
+        {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item)
+            {
                 Fragment fragment;
-                switch (item.getItemId()) {
+                switch (item.getItemId())
+                {
                     case R.id.home:
                         fragment = new HomeFragment();
                         loadFragment(fragment);
@@ -43,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
                         loadFragment(fragment);
                         return true;
                 }
-
                 return false;
             }
         });
     }
 
-    private void loadFragment(Fragment fragment) {
+    private void loadFragment(Fragment fragment)
+    {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragmentContainerView, fragment);
