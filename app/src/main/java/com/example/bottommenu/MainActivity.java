@@ -14,10 +14,11 @@ import com.google.android.material.navigation.NavigationBarView;
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    BottomNavigationView nav = findViewById(R.id.nav);
+        BottomNavigationView nav = findViewById(R.id.nav);
         nav.setOnItemSelectedListener(new
         NavigationBarView.OnItemSelectedListener() {
                                                       @Override
