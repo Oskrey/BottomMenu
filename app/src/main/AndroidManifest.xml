@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BottomMenu">
         <activity
+            android:name=".PeopleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -2,8 +2,6 @@ package com.example.bottommenu;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,15 +10,14 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity extends AppCompatActivity
-{
+public class CartActivity extends AppCompatActivity {
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cart);
         BottomNavigationView nav = findViewById(R.id.nav);
-        nav.setSelectedItemId(R.id.home);
+        nav.setSelectedItemId(R.id.cart);
         nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener()
         {
             @Override
