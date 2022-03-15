@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BottomMenu">
         <activity
-            android:name=".People" />
+            android:name=".PeopleActivity"
+            android:exported="false" />
         <activity
-            android:name=".Cart"/>
+            android:name=".HistoryActivity"
+            android:exported="false" />
         <activity
-            android:name=".History" />
+            android:name=".CartActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

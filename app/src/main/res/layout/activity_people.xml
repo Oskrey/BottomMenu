@@ -3,20 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".People">
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.bottommenu.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="-278dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="176dp"
-        android:layout_height="172dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="242dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="287dp"
+        android:id="@+id/imageView3"
+        android:layout_width="111dp"
+        android:layout_height="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_people" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
